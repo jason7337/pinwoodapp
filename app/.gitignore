@@ -1,3 +1,3 @@
 /build
-pinwoodapp.md
-pinwoodapp_estado.md
+*.md
+!README.md
