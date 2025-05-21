@@ -1,9 +1,12 @@
 package com.pinwood.app.ui.home.viewmodel;
 
+import android.app.Application;
+import android.content.Context;
+
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MediatorLiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.pinwood.app.data.model.product.Product;
 import com.pinwood.app.data.repository.CategoryRepository;
@@ -13,7 +16,7 @@ import com.pinwood.app.data.repository.PromotionRepository;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeViewModel extends ViewModel {
+public class HomeViewModel extends AndroidViewModel {
     private final MediatorLiveData<List<Product>> featuredProducts = new MediatorLiveData<>();
     private final MediatorLiveData<List<String>> categories = new MediatorLiveData<>();
     private final MediatorLiveData<String> bannerImageUrl = new MediatorLiveData<>();
@@ -28,15 +31,18 @@ public class HomeViewModel extends ViewModel {
     private LiveData<List<String>> categoriesSource;
     private LiveData<String> bannerImageUrlSource;
 
-    public HomeViewModel() {
+    public HomeViewModel(Application application) {
+        super(application);
         // Inicializar valores por defecto
         featuredProducts.setValue(new ArrayList<>());
         categories.setValue(new ArrayList<>());
         bannerImageUrl.setValue("");
         isLoading.setValue(false);
         
+        Context context = application.getApplicationContext();
+        
         // Inicializar repositorios
-        productRepository = ProductRepository.getInstance();
+        productRepository = ProductRepository.getInstance(context);
         categoryRepository = CategoryRepository.getInstance();
         promotionRepository = PromotionRepository.getInstance();
         

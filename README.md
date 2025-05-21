@@ -61,8 +61,26 @@ com.pinwood.app/
 ## Estado de Desarrollo
 La aplicación se encuentra actualmente en desarrollo activo. Se han completado la autenticación básica, la estructura de navegación y la pantalla de inicio. La implementación de RA, el catálogo de productos y los procesos de pago están en desarrollo.
 
+## Capturas de Pantalla
+A continuación se muestran capturas de pantalla del desarrollo actual de la aplicación:
+
+### Pantalla de Splash
+![Splash Screen](/Capturas%20de%20desarrollo/Screenshot_2025-05-21-01-58-06-300_com.pinwood.app.jpg)
+
+### Pantalla de Inicio de Sesión
+![Login Screen](/Capturas%20de%20desarrollo/Screenshot_2025-05-21-01-58-09-713_com.pinwood.app.jpg)
+
+### Pantalla de Registro
+![Register Screen](/Capturas%20de%20desarrollo/Screenshot_2025-05-21-01-58-14-200_com.pinwood.app.jpg)
+
+### Pantalla Principal
+![Home Screen](/Capturas%20de%20desarrollo/Screenshot_2025-05-21-01-59-09-921_com.pinwood.app.jpg)
+
+### Menú de Navegación
+![Navigation Menu](/Capturas%20de%20desarrollo/Screenshot_2025-05-21-01-59-13-628_com.pinwood.app.jpg)
+
 ## Licencia
-[Incluir información de licencia aquí]
+---
 
 ## Contacto
-[Incluir información de contacto aquí]
+---

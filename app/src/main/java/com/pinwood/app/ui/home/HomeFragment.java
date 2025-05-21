@@ -70,7 +70,9 @@ public class HomeFragment extends Fragment {
     }
     
     private void setupViewModel() {
-        viewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        viewModel = new ViewModelProvider(this, 
+            ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().getApplication()))
+            .get(HomeViewModel.class);
         
         // Observar categorías
         viewModel.getCategories().observe(getViewLifecycleOwner(), categories -> {

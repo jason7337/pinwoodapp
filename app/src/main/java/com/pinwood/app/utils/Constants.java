@@ -14,11 +14,16 @@ public class Constants {
     // Firebase Product Sub-collections
     public static final String SUBCOLLECTION_REVIEWS = "reviews";
     
+    // Firebase Storage Paths
+    public static final String STORAGE_PROFILE_IMAGES = "profile_images";
+    
     // Shared Preferences
     public static final String PREFS_NAME = "PinwoodPrefs";
     public static final String PREF_USER_ID = "user_id";
     public static final String PREF_USER_NAME = "user_name";
     public static final String PREF_USER_EMAIL = "user_email";
+    public static final String PREF_USER_PHONE = "user_phone";
+    public static final String PREF_PROFILE_IMAGE_URL = "profile_image_url";
     
     // Order Status
     public static final String ORDER_STATUS_PENDING = "pending";
@@ -37,6 +42,8 @@ public class Constants {
     public static final int REQUEST_CODE_CAMERA_PERMISSION = 101;
     public static final int REQUEST_CODE_STORAGE_PERMISSION = 102;
     public static final int REQUEST_CODE_AR_ACTIVITY = 103;
+    public static final int REQUEST_CODE_CAMERA = 104;
+    public static final int REQUEST_CODE_GALLERY = 105;
     
     // Notification Channels
     public static final String CHANNEL_ORDERS = "orders_channel";
