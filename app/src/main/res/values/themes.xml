@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PinwoodApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green_700</item>
+        <item name="colorPrimaryVariant">@color/green_900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/blue_700</item>
+        <item name="colorSecondaryVariant">@color/blue_900</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="colorSurface">@color/background_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background_section</item>
+        
+        <item name="colorError">@color/error</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/green_900</item>
+    </style>
+
+    <style name="Theme.PinwoodApp" parent="Base.Theme.PinwoodApp" />
+    
+    <style name="Theme.PinwoodApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <!-- Tema para SplashActivity -->
+    <style name="Theme.PinwoodApp.Splash" parent="Theme.PinwoodApp.NoActionBar">
+        <item name="android:windowBackground">@color/background_warm</item>
+        <item name="android:statusBarColor">@color/background_warm</item>
+        <item name="android:navigationBarColor">@color/background_warm</item>
+    </style>
+</resources>

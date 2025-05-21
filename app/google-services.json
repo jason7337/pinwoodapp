@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483384283164",
+    "project_id": "pinwoodapp-3fd95",
+    "storage_bucket": "pinwoodapp-3fd95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483384283164:android:7805261a97186ad5918fd9",
+        "android_client_info": {
+          "package_name": "com.pinwood.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa_XinnrPtIB1hZa_CKwJTVbAlZlVi1kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
